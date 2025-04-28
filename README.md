@@ -18,7 +18,6 @@ Current floorplan generation solutions often suffer from:
 
 * High Latency
 * High Cost
-* Lack of Integration
 
 ## How This Implementation Addresses the Problem
 
@@ -29,7 +28,6 @@ Pic2Plot addresses these problems through:
     * `asyncio` for concurrent operations.
 * **Cost Optimization & Adaptive LLM Usage**: Strategic selection of Azure OpenAI models based on use-case complexity.
    * Example: For simple text processing, Pic2Plot uses Phi-3, a smaller, less expensive model
-* **Modularity and Integration**: Chainlit for a user-friendly chat interface.
 * **Unique Feature**: Health recommendations from room images.
 
 
