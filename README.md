@@ -47,8 +47,7 @@ The application consists of three main parts:
     ```bash
     pip install -r requirements.txt
     ```
-    *(Note:  A `requirements.txt` file was not in the uploaded files, so you may need to create one.  A basic one would include: `chainlit`, `mcp-client`, `mcp-server`, `Pillow`, `azure-ai-inference`, `requests`, `numpy`, `pandas`, `sentence-transformers`, and `scikit-learn`)*
-
+    
 3.  **Set up Azure credentials:**
     * You'll need an Azure account and API keys for the Azure AI services used in `server.py`.  Replace the placeholder values (e.g., `your_githubtoken`, `your_token`) in `server.py` with your actual credentials.
     * If using ngrok, replace `your_auth_token` in `run.py` with your ngrok auth token.
