@@ -71,17 +71,32 @@ The application consists of three main parts:
     * Type a text description:  Describe the desired floor plan, and the application will attempt to find similar plans.
 4.  **Output:** The application will display the generated floor plan, real estate description, or health tips.
 
-## Dependencies
+# Project Tech Stack
 
-The application uses the following main libraries:
+## Core Technologies
 
-* Chainlit: For building the chat interface.
-* MCP: For managing the communication between the client and server.
-* PIL (Pillow): For image processing.
-* Azure AI SDK: For interacting with Azure's AI services (Chat Completions).
-* Sentence Transformers: For generating text embeddings.
-* Scikit-learn: For calculating cosine similarity.
-* Ngrok (optional): For creating a public URL for the application.
+* **Programming Language:** Python
+* **Web Framework:** Chainlit (for the user interface)
+* **MCP:** A custom framework (FastMCP) for defining and running tools
+
+## Key Components & Libraries
+
+* **Azure OpenAI:** Used for AI model interactions, specifically the Chat Completions API.
+* **Models:**
+    * GPT-4 (for image analysis, description, and floorplan generation)
+    * Phi-3 (for processing user input and extracting floorplan information)
+    * Llama 3 (for generating health tips from images)
+    * DALL-E 3 (for generating floor plan images)
+* **Image Processing:** PIL (Python Imaging Library)
+* **Data Handling:** Pandas
+* **Sentence Transformers:** For calculating embedding similarities.
+* **Networking:** `requests`
+* **Other:** `asyncio`, `base64`
+
+## Infrastructure
+
+* **Azure Machine Learning (AML):** The project is developed and run on Azure Machine Learning.
+  
 
 ## Configuration
 
