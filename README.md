@@ -34,3 +34,9 @@ Welcome to **Pic2Plot** — a powerful tool that turns room images or text descr
 1. **Install Requirements**  
    ```bash
    pip install -r requirements.txt
+2. **Run the MCP Server**
+  ```bash
+   python server.py
+3. **Start the Chainlit App with Ngrok**
+  ```bash
+  python run.py
