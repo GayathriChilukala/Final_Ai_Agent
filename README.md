@@ -132,3 +132,11 @@ We aim to integrate **Spatial Language Models (Spatial LM)** for smarter, more c
 
 We are excited about these future developments and believe they will significantly enhance the user experience and capabilities of our platform. Stay tuned for updates!
 
+**🙏 Acknowledgements**
+
+We would like to extend our sincere gratitude to **Microsoft** for organizing and conducting this insightful hackathon. Your support and platform have been invaluable in fostering innovation and allowing us to explore these exciting possibilities.
+
+A special thank you to **Pamela Fox** for her engaging and informative lectures. Her expertise and guidance have been truly inspiring and have significantly contributed to our understanding and progress.
+
+Finally, we would also like to thank all the other organizers, mentors, and participants who contributed to making this hackathon a valuable and enriching experience. Your collective efforts and enthusiasm are greatly appreciated.
+
