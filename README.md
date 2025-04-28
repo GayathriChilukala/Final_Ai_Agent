@@ -59,16 +59,18 @@ The application consists of three main parts:
     python run.py
     ```
     This will start the MCP server, and then the Chainlit application.  If configured, the application will be accessible via the ngrok URL.
+    
 
 ## Project Tech Stack
 
-## Core Technologies
+### Core Technologies
 
 * **Programming Language:** Python
 * **Web Framework:** Chainlit (for the user interface)
 * **MCP:** A custom framework (FastMCP) for defining and running tools
+  
 
-## Key Components & Libraries
+### Key Components & Libraries
 
 * **Azure OpenAI:** Used for AI model interactions, specifically the Chat Completions API.
 * **Models:**
@@ -82,7 +84,8 @@ The application consists of three main parts:
 * **Networking:** `requests`
 * **Other:** `asyncio`, `base64`
 
-## Infrastructure
+
+### Infrastructure
 
 * **Azure Machine Learning (AML):** The project is developed and run on Azure Machine Learning.
   
@@ -93,13 +96,6 @@ The application consists of three main parts:
 * `server.py`:  Contains the server-side logic, including API keys and model endpoints for Azure AI.
 * `client.py`:  Sets up the Chainlit client and defines how user input is processed and sent to the server.
 
-## Notes
-
-* Ensure that the server (`server.py`) is running and the necessary AI models and APIs are accessible *before* starting the client (`run.py`).
-* The application assumes that the required Azure services and models are deployed and configured correctly.
-* The `requirements.txt` file should contain all the necessary Python packages.
-* Ngrok is used to expose the local Chainlit application to the internet.  You can modify `run.py` if you have other deployment needs.
-* The application uses a function `encode_image` in server.py, but the encoded image is not actually used in the current version of client.py.
 
 
 ## Team Members
