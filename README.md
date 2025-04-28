@@ -35,27 +35,6 @@ Pic2Plot addresses these problems through:
 
 ![Description](https://github.com/GayathriChilukala/Final_Ai_Agent/blob/main/final_architecture_diagram.gif)
 
-The application consists of three main parts:
-
-1.  **Server (`server.py`)**:
-    * Sets up an MCP server to expose AI tools.
-    * Defines functions for:
-        * Analyzing room layouts from text descriptions.
-        * Generating floor plans from descriptions using DALL-E.
-        * Finding similar floor plans from a database.
-        * Generating real estate descriptions from images.
-        * Analyzing room images to provide health tips.
-    * Uses Azure AI services, Sentence Transformers, and custom logic for image and text processing.
-
-2.  **Client (`client.py`)**:
-    * Uses Chainlit to create an interactive chat interface.
-    * Handles user input (images and text).
-    * Communicates with the MCP server to process the data.
-    * Displays the results to the user.
-
-3.  **Runner (`run.py`)**:
-    * Starts the Chainlit application.
-    * Optionally sets up an ngrok tunnel to make the application accessible over the internet.
 
 ## Setup
 
