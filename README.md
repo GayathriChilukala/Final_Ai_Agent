@@ -1,4 +1,4 @@
-# Pic2Plot - Smart Floor Plan & Room Analyzer
+# 🏠 Pic2Plot - Smart Floor Plan & Room Analyzer
 
 ## Overview
 
