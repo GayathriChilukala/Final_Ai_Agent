@@ -96,3 +96,12 @@ The application uses the following main libraries:
 * The `requirements.txt` file should contain all the necessary Python packages.
 * Ngrok is used to expose the local Chainlit application to the internet.  You can modify `run.py` if you have other deployment needs.
 * The application uses a function `encode_image` in server.py, but the encoded image is not actually used in the current version of client.py.
+
+
+## Team Members
+
+- **Danny Favela** — dfavela@gmail.com
+- **Dongdong Li** — dongdong@outlook.co.nz
+- **Gayathri Chilukala** — gchilukala2023@fau.edu
+- **Tiffany Siman** — tiffanysiman@gmail.com
+
