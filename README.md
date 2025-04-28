@@ -18,7 +18,6 @@ Current floorplan generation solutions often suffer from:
 
 * High Latency
 * High Cost
-* Limited Accuracy/Relevance
 * Lack of Integration
 
 ## How This Implementation Addresses the Problem
