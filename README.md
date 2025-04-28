@@ -34,7 +34,6 @@ Pic2Plot addresses these problems through:
 ## Architecture
 
 ![Description](https://github.com/GayathriChilukala/Final_Ai_Agent/blob/main/final_architecture_diagram.gif)
-<img> tag is <img src="[https://drive.google.com/file/d/14P7xOYaPP1TUq-hNrJWp5hekHcw48xUp/view?usp=drive_link](https://github.com/GayathriChilukala/Final_Ai_Agent/blob/main/final_architecture_diagram.gif)" alt="Description of GIF">
 
 The application consists of three main parts:
 
