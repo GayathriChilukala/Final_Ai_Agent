@@ -106,3 +106,29 @@ Pic2Plot addresses these problems through:
 - **Gayathri Chilukala** — gchilukala2023@fau.edu
 - **Tiffany Siman** — tiffanysiman@gmail.com
 
+## 🚀 Future Plans
+
+This section outlines our upcoming development efforts aimed at enhancing our platform's capabilities.
+
+**Azure AI Search Integration:**
+
+To further enhance our search capabilities, we plan to integrate [Azure AI Search](https://azure.microsoft.com/en-us/products/cognitive-services/azure-ai-search/) for managing and retrieving floor plans and embeddings. This powerful tool will enable us to efficiently index room images and textual data, ensuring faster and more relevant search results.
+
+**Key benefits of this integration include:**
+
+* **Efficient Indexing:** Seamlessly index and manage a large volume of floor plan images and associated textual information.
+* **Faster Search Results:** Leverage Azure AI Search's advanced indexing and querying capabilities for quicker retrieval of relevant data.
+* **Improved Relevance:** Utilize vector search and semantic ranking to provide more contextually accurate search results based on user queries.
+
+**Spatial Language Models (Spatial LM):**
+
+We aim to integrate **Spatial Language Models (Spatial LM)** for smarter, more context-aware spatial understanding and more advanced floor plan generation. By leveraging the power of these models, our platform will gain a deeper understanding of spatial relationships and user intent.
+
+**This integration will enable:**
+
+* **Smarter Spatial Understanding:** Enhanced ability to interpret and reason about spatial configurations within floor plans.
+* **Context-Aware Generation:** Generation of more accurate and contextually relevant floor plans based on user input and spatial understanding.
+* **Advanced Features:** Potential for new features leveraging spatial reasoning, such as intelligent layout suggestions and spatial query understanding.
+
+We are excited about these future developments and believe they will significantly enhance the user experience and capabilities of our platform. Stay tuned for updates!
+
