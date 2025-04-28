@@ -3,7 +3,7 @@ import base64
 import io
 import json
 import requests
-
+from collections import deque
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 from langchain_mcp_adapters.tools import load_mcp_tools
@@ -31,8 +31,10 @@ async def update_history(usecase: str, result):
     """Updates the history JSON file in Azure Blob Storage, handling different result types."""
     new_record = {"usecase": usecase, "result": result}
     try:
+        # Fetch existing history
         response = requests.get(sas_url)
-        response.raise_for_status()  # Raise an exception for HTTP errors
+        response.raise_for_status()
+
         try:
             existing_data = response.json()
             if not isinstance(existing_data, list):
@@ -42,22 +44,26 @@ async def update_history(usecase: str, result):
             print("JSON is empty or invalid. Starting fresh...")
             existing_data = []
 
-        if len(existing_data) >= 10:
-            print("More than 10 records, removing the last one...")
-            existing_data.pop(-1)
+        # Use deque to automatically manage size
+        history = deque(existing_data, maxlen=10)
+        history.appendleft(new_record)  # Add the new record at the beginning
 
-        existing_data.insert(0, new_record)
-        updated_json_data = json.dumps(existing_data, indent=4)
+        updated_json_data = json.dumps(list(history), indent=4)
+
+        # Upload the updated history
         headers = {"x-ms-blob-type": "BlockBlob", "Content-Type": "application/json"}
         upload_response = requests.put(sas_url, headers=headers, data=updated_json_data)
         upload_response.raise_for_status()
+
         print("Updated JSON successfully uploaded!")
+
     except requests.exceptions.RequestException as e:
         print(f"Error updating history: {e}")
     except json.JSONDecodeError as e:
         print(f"Error decoding existing JSON: {e}")
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
+
 
 
 @cl.on_chat_start
