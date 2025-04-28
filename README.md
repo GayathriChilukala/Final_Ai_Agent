@@ -34,7 +34,7 @@ Pic2Plot addresses these problems through:
 ## Architecture
 
 
-HTML <img> tag is <img src="https://raw.githubusercontent.com/wkrouse/Bringing-My-OCD-Online/Gif/1st.gif" alt="Description of GIF">
+<img> tag is <img src="https://drive.google.com/file/d/14P7xOYaPP1TUq-hNrJWp5hekHcw48xUp/view?usp=drive_link" alt="Description of GIF">
 
 The application consists of three main parts:
 
