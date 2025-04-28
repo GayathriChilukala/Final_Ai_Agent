@@ -33,6 +33,8 @@ Pic2Plot addresses these problems through:
 
 ## Architecture
 
+
+ 
 The application consists of three main parts:
 
 1.  **Server (`server.py`)**:
