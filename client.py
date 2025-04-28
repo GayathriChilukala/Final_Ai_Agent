@@ -62,22 +62,31 @@ async def update_history(usecase: str, result):
 
 @cl.on_chat_start
 async def on_chat_start():
+    # Welcome message
     await cl.Message(
         content="""
+
 # 🏠 Pic2Plot - Smart Floor Plan & Room Analyzer
 
 Welcome! Upload room photos or provide a text description — I'll generate floor plans, real estate descriptions, or even health tips based on your rooms!
 
 ## What you can do:
-- 🖼️ **Images to Floor Plan**
-- ✍️ **Text to Floor Plan**
-- 🏡 **Images to Real Estate Description**
-- 💡 **Health Recommendations from Room Images**
+- 🖼️ **Images to Floor Plan**: Upload room images to automatically create a detailed floor plan.
+- ✍️ **Text to Floor Plan**: Provide a text description of a space, and I'll turn it into a floor plan.
+- 🏡 **Images to Real Estate Description**: Get professional real estate listing descriptions from your uploaded room images.
+- 💡 **Health Recommendations from Room Images**: Receive personalized suggestions to improve your room's health, lighting, or ergonomics.
+
+## How to use:
+1. Upload room images **or** type a description.
+2. Wait a moment while the AI processes your input.
+3. Get your generated floor plan, description, or health tips!
 
 Let's get started!
-"""
-    ).send()
 
+
+        """
+    ).send()
+    
 
 @cl.on_message
 async def on_message(message: cl.Message):
