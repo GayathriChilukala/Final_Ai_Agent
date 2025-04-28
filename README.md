@@ -60,18 +60,7 @@ The application consists of three main parts:
     ```
     This will start the MCP server, and then the Chainlit application.  If configured, the application will be accessible via the ngrok URL.
 
-## Usage
-
-1.  **Start the application:**
-    * Run `python server.py` to start the MCP server.
-    * Run `python run.py` to start the Chainlit application.
-2.  **Interact with the Chatbot:** Open the provided URL in your browser to access the Pic2Plot chat interface.
-3.  **Input:**
-    * Upload room images:  The application will attempt to generate a floor plan, real estate description, and/or health tips, depending on the server-side tools that are configured.
-    * Type a text description:  Describe the desired floor plan, and the application will attempt to find similar plans.
-4.  **Output:** The application will display the generated floor plan, real estate description, or health tips.
-
-# Project Tech Stack
+## Project Tech Stack
 
 ## Core Technologies
 
