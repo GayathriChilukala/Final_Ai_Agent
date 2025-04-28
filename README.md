@@ -28,3 +28,9 @@ Welcome to **Pic2Plot** — a powerful tool that turns room images or text descr
 
 ---
 
+
+## 🚀 How to Run
+
+1. **Install Requirements**  
+   ```bash
+   pip install -r requirements.txt
