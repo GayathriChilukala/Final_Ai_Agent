@@ -33,6 +33,7 @@ Pic2Plot addresses these problems through:
 
 ## Architecture
 
+![Demo Animation](https://drive.google.com/file/d/1mNKRLZ5-Y-qWvckyCDJ8_IoUU-J2ohXg/view?usp=sharing)
 
  
 The application consists of three main parts:
