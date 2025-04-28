@@ -1,6 +1,8 @@
 import asyncio
 import base64
 import io
+import json
+import requests
 
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
@@ -17,10 +19,45 @@ server_params = StdioServerParameters(
     args=["server.py"]
 )
 
+# Your SAS URL for storing history
+sas_url = "YOUR_SAS_URL_HERE"
+
 async def encode_chainlit_file_to_base64(file: cl.File) -> str:
     """Asynchronously read and encode a Chainlit file to base64."""
     content = await file.read()
     return base64.b64encode(content).decode("utf-8")
+
+async def update_history(usecase: str, result):
+    """Updates the history JSON file in Azure Blob Storage, handling different result types."""
+    new_record = {"usecase": usecase, "result": result}
+    try:
+        response = requests.get(sas_url)
+        response.raise_for_status()  # Raise an exception for HTTP errors
+        try:
+            existing_data = response.json()
+            if not isinstance(existing_data, list):
+                print("Existing JSON is not a list. Fixing...")
+                existing_data = [existing_data]
+        except json.JSONDecodeError:
+            print("JSON is empty or invalid. Starting fresh...")
+            existing_data = []
+
+        if len(existing_data) >= 10:
+            print("More than 10 records, removing the last one...")
+            existing_data.pop(-1)
+
+        existing_data.insert(0, new_record)
+        updated_json_data = json.dumps(existing_data, indent=4)
+        headers = {"x-ms-blob-type": "BlockBlob", "Content-Type": "application/json"}
+        upload_response = requests.put(sas_url, headers=headers, data=updated_json_data)
+        upload_response.raise_for_status()
+        print("Updated JSON successfully uploaded!")
+    except requests.exceptions.RequestException as e:
+        print(f"Error updating history: {e}")
+    except json.JSONDecodeError as e:
+        print(f"Error decoding existing JSON: {e}")
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
 
 
 @cl.on_chat_start
@@ -86,11 +123,13 @@ async def on_message(message: cl.Message):
             tool = next(tool for tool in global_tools if tool.name == "generate_health_tips_from_image")
             result = await tool.ainvoke({"image_paths": encoded_images})
             await cl.Message(content=result).send()
+            await update_history("generate_health_tips_from_image", result)
 
         elif action == "generate_real_estate_description_from_images":
             tool = next(tool for tool in global_tools if tool.name == "generate_real_estate_description_from_images")
             result = await tool.ainvoke({"image_paths": encoded_images})
             await cl.Message(content=result).send()
+            await update_history("generate_real_estate_description_from_images", result)
 
         elif action == "analyze_images_and_generate_floorplan":
             tool = next(tool for tool in global_tools if tool.name == "analyze_images_and_generate_floorplan")
@@ -99,6 +138,7 @@ async def on_message(message: cl.Message):
                 content=f"🛠️ Generated floorplan based on your request: '{user_text}'",
                 elements=[cl.Image(name="Floorplan", display="inline", url=floorplan_image)]
             ).send()
+            await update_history("analyze_images_and_generate_floorplan", floorplan_image)
 
         else:
             tool = next(tool for tool in global_tools if tool.name == "process_query")
@@ -108,6 +148,7 @@ async def on_message(message: cl.Message):
                 content="📋 Here are some floor plans based on your description!",
                 elements=elements
             ).send()
+            await update_history("text_to_floorplan", image_urls)  # Pass the list of URLs directly
 
     except Exception as e:
         print(f"Error: {e}")
