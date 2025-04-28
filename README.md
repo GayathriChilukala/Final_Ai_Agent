@@ -11,6 +11,32 @@ Pic2Plot is a Python application that uses AI to generate floor plans, real esta
 -   **Images to Real Estate Description**: Get professional real estate listing descriptions from uploaded room images.
 -   **Health Recommendations from Room Images**: Receive personalized suggestions to improve your room's health, lighting, or ergonomics.
 
+
+## Problem Statement
+
+Current floorplan generation solutions often suffer from:
+
+* High Latency
+* High Cost
+* Limited Accuracy/Relevance
+* Lack of Integration
+
+## How This Implementation Addresses the Problem
+
+Pic2Plot addresses these problems through:
+
+* **Efficiency**:
+    * FastMCP framework for optimized communication.
+    * `asyncio` for concurrent operations.
+* **Cost Optimization & Adaptive LLM Usage**: Strategic selection of Azure OpenAI models based on use-case complexity.
+* **Accuracy and Relevance**:
+    * GPT-4 for image and text analysis.
+    * Detailed prompt engineering for accurate room descriptions.
+    * Semantic similarity search for relevant floor plan retrieval.
+* **Modularity and Integration**: Chainlit for a user-friendly chat interface.
+* **Unique Feature**: Health recommendations from room images.
+
+
 ## Architecture
 
 The application consists of three main parts:
