@@ -28,10 +28,7 @@ Pic2Plot addresses these problems through:
     * FastMCP framework for optimized communication.
     * `asyncio` for concurrent operations.
 * **Cost Optimization & Adaptive LLM Usage**: Strategic selection of Azure OpenAI models based on use-case complexity.
-* **Accuracy and Relevance**:
-    * GPT-4 for image and text analysis.
-    * Detailed prompt engineering for accurate room descriptions.
-    * Semantic similarity search for relevant floor plan retrieval.
+   * Example: For simple text processing, Pic2Plot uses Phi-3, a smaller, less expensive model
 * **Modularity and Integration**: Chainlit for a user-friendly chat interface.
 * **Unique Feature**: Health recommendations from room images.
 
