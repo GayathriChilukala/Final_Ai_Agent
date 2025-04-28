@@ -1,0 +1,14 @@
+chainlit>=0.7.0
+mcp
+langchain
+langchain-mcp-adapters
+pyngrok
+pillow
+requests
+numpy
+pandas
+sentence-transformers
+scikit-learn
+azure-ai-inference
+azure-core
+nest_asyncio
