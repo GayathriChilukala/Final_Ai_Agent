@@ -33,7 +33,7 @@ Pic2Plot addresses these problems through:
 
 ## Architecture
 
-![Description](https://github.com/GayathriChilukala/Final_Ai_Agent/blob/main/final_architecture_diagram.gif)
+![Description](https://github.com/GayathriChilukala/Final_Ai_Agent/blob/main/Final_arch.gif)
 
 
 ## Setup
