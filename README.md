@@ -122,7 +122,7 @@ To further enhance our search capabilities, we plan to integrate [Azure AI Searc
 
 **Spatial Language Models (Spatial LM):**
 
-We aim to integrate **Spatial Language Models (Spatial LM)** for smarter, more context-aware spatial understanding and more advanced floor plan generation. By leveraging the power of these models, our platform will gain a deeper understanding of spatial relationships and user intent.
+We aim to integrate **Spatial Language Models (Spatial LM)** for smarter, more context-aware spatial understanding and more advanced floor plan generation, as demonstrated in [Here](spatiallm_demo/README.md). By leveraging the power of these models, our platform will gain a deeper understanding of spatial relationships and user intent.
 
 **This integration will enable:**
 
