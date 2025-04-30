@@ -133,7 +133,7 @@ async def on_message(message: cl.Message):
 
     try:
         action = await user_func.ainvoke({"user_input": user_text})
-
+        await cl.Message(content="Loading...⏳").send()
         if action == "generate_health_tips_from_image":
             tool = next(tool for tool in global_tools if tool.name == "generate_health_tips_from_image")
             result = await tool.ainvoke({"image_paths": encoded_images})
