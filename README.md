@@ -10,7 +10,7 @@ Pic2Plot is a Python application that uses AI to generate floor plans, real esta
 -   **Text to Floor Plan**: Provide a text description of a space, and the AI will turn it into a floor plan.
 -   **Images to Real Estate Description**: Get professional real estate listing descriptions from uploaded room images.
 -   **Health Recommendations from Room Images**: Receive personalized suggestions to improve your room's health, lighting, or ergonomics.
--   
+    
 
 ## Problem Statement
 
