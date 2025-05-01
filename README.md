@@ -26,8 +26,26 @@ Pic2Plot addresses these problems through:
 * **Efficiency**:
     * FastMCP framework for optimized communication.
     * `asyncio` for concurrent operations.
-* **Cost Optimization & Adaptive LLM Usage**: Strategic selection of Azure OpenAI models based on use-case complexity.
-   * Example: For simple text processing, Pic2Plot uses Phi-3, a smaller, less expensive model
+* **Cost Optimization & Adaptive LLM Usage**: 
+
+This project strategically employs various language and vision models, focusing on optimizing both performance and cost-efficiency. Our key optimization strategies include:
+
+* **Cost-Effective Models for Routine Tasks:** Utilizing models like Phi-3 for simple text parsing ensures speed and low cost for high-frequency operations.
+* **Modular Activation:** Expensive models like GPT-4.1 are invoked only when necessary, such as for real estate description and floorplan generation.
+* **Embedding-Based Matching:** Employing cosine similarity for tasks like floorplan from text by matching improves accuracy while reducing reliance on costly live API calls.
+* **Balanced Vision-Language Models:** Choosing models like LLaMA 3 Vision provides strong vision and language capabilities at a more favorable cost and latency than alternatives like GPT-4.
+
+Here's a summary of the model usage for each feature:
+
+| Use Case                       | Model(s)                      | Frequency | Cost Level |
+|--------------------------------|-------------------------------|-----------|------------|
+| Simple text parsing            | Phi-3                         | High      | 💲         |
+| Floorplan description/image gen.| GPT-4.1 + GPT-4.1-Mini + Dalle     | Medium    | 💲💲💲        |
+| Health tips from room image    | LLaMA 3 Vision                | Medium    | 💲         |
+| Real estate description        | GPT-4.1                       | Low       | 💲💲       |
+| Layout matching                | Phi-3 + CosSim               | High      | 💲💲         |
+
+
 * **Unique Feature**: Health recommendations from room images.
 
 
