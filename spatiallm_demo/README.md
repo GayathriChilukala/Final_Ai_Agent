@@ -38,7 +38,9 @@ The workflow includes the following five main steps:
 
 5) **Visual Floor Plan Generation**: Use the estimated spatial information as input to a text-to-image model (e.g., `Gpt-image-1`) to generate visual representations of the layout.
 
+## Video Demo
 
+Link: https://youtu.be/zhSWZRst6LU
 
 ## 1. Reconstruct a point cloud with SLAM3R
 
