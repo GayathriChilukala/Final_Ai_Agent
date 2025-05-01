@@ -151,7 +151,6 @@ We aim to integrate **Spatial Language Models (Spatial LM)** for smarter, more c
 We are excited about these future developments and believe they will significantly enhance the user experience and capabilities of our platform. Stay tuned for updates!
 
 
-
 **🧠 Responsible AI Practices**
 
 * **Transparency and Fair Usage:** We utilize publicly available datasets sourced from Kaggle and open-source models primarily from platforms like Hugging Face and GitHub. This ensures transparency in our data origins and model provenance, and we are committed to fair usage in accordance with their respective terms.
