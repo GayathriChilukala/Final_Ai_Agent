@@ -135,7 +135,7 @@ Here's a summary of the model usage for each feature:
 ![UI Use Case 3 Image](https://github.com/GayathriChilukala/Final_Ai_Agent/blob/main/usecase3op.jpg)
 
 
-### UI Images to Real Estate Description H
+### UI Images to Real Estate Description 
 
 ![UI Use Case 4 Image](https://github.com/GayathriChilukala/Final_Ai_Agent/blob/main/usecase4op.jpg)
 
