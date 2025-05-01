@@ -115,6 +115,28 @@ Here's a summary of the model usage for each feature:
 * `server.py`:  Contains the server-side logic, including API keys and model endpoints for Azure AI.
 * `client.py`:  Sets up the Chainlit client and defines how user input is processed and sent to the server.
 
+## UI Output Screenshots
+
+
+### UI Use Case 1
+
+![UI Use Case 1 Image](path/to/UI_Use_Case_1_Image.png)
+[A short description of what this screenshot shows]
+
+### UI Use Case 2
+
+![UI Use Case 2 Image](path/to/UI_Use_Case_2_Image.png)
+[A short description of what this screenshot shows]
+
+### UI Use Case 3
+
+![UI Use Case 3 Image](path/to/UI_Use_Case_3_Image.png)
+[A short description of what this screenshot shows]
+
+### UI Use Case 4
+
+![UI Use Case 4 Image](path/to/UI_Use_Case_4_Image.png)
+[A short description of what this screenshot shows]
 
 
 ## Team Members
