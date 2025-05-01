@@ -156,6 +156,11 @@ We are excited about these future developments and believe they will significant
 * **Transparency and Fair Usage:** We utilize publicly available datasets sourced from Kaggle and open-source models primarily from platforms like Hugging Face and GitHub. This ensures transparency in our data origins and model provenance, and we are committed to fair usage in accordance with their respective terms.
 
 
+
+**Real-time Use Cases: Imagine websites like Zillow, Redfin, or even interior design platforms integrating Pic2Plot. Users could upload photos of rooms in a listed property or their own home, and our AI could instantly generate a basic floor plan sketch and a compelling real estate or design description, providing a better understanding of the layout and features directly from the images. This capability could enhance user engagement, streamline property exploration, and aid in design visualization across numerous web platforms.**
+
+
+
 **🙏 Acknowledgements**
 
 We would like to extend our sincere gratitude to **Microsoft** for organizing and conducting this insightful hackathon. Your support and platform have been invaluable in fostering innovation and allowing us to explore these exciting possibilities.
