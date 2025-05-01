@@ -119,7 +119,7 @@ Here's a summary of the model usage for each feature:
 
 ## Team Members
 
-- **Danny Favela** — dfavela@gmail.com
+- **Danny Favela** — dfavela@alumni.usc.edu
 - **Dongdong Li** — dongdong@outlook.co.nz
 - **Gayathri Chilukala** — gchilukala2023@fau.edu
 - **Tiffany Siman** — tiffanysiman@gmail.com
