@@ -75,7 +75,7 @@ This is a 2BHK apartment with a spacious open living area and adjacent dining ar
     return response.choices[0].message.content
 
 
-
+# Function to generate a floor plan image using Azure OpenAI DALL·E 3 based on a text description.
 def generate_floor_plan(user_description: str, api_key: str) -> Image:
     # Azure OpenAI DALL·E 3 API Configuration
     api_base_url = "https://gchil-m9nglnci-swedencentral.cognitiveservices.azure.com"
@@ -151,7 +151,8 @@ def find_top_similar_labels(query, embeddings_url="https://pic2plotrg2465003651.
 
     # Return top results
     return top_results
-    
+
+# Function to extract structured floor plan information (number of beds, baths, etc.) from a user query.
 def get_floor_plan_info(user_query, model_name="microsoft/Phi-3-mini-4k-instruct", endpoint="https://models.github.ai/inference", token='your_githubtoken'):
     # Initialize the client
     client = ChatCompletionsClient(
@@ -197,7 +198,8 @@ def get_floor_plan_info(user_query, model_name="microsoft/Phi-3-mini-4k-instruct
 
     query = response.choices[0].message.content.strip()
     return query
-
+    
+# Function to encode an image to a base64 string, attempting to keep the size under a target limit.
 def encode_image(image_path, target_kb=10):
     with Image.open(image_path) as img:
         img = img.convert("RGB")
@@ -220,7 +222,7 @@ def encode_image(image_path, target_kb=10):
         encoded = base64.b64encode(buffer.read()).decode("utf-8")
         return encoded  # Just return the base64 string
 
-
+# Function to save a base64 string as an image file.
 def save_base64_as_image(base64_string, output_path):
     # Decode the base64 string and save as an image
     img_data = base64.b64decode(base64_string)
@@ -228,6 +230,7 @@ def save_base64_as_image(base64_string, output_path):
         img_file.write(img_data)
     return output_path
 
+# MCP tool to generate a real estate description from provided room images.
 @mcp.tool()
 def generate_real_estate_description_from_images(image_paths, TOKEN="your_githubtoken",prompt_text=None)->str:
     ENDPOINT = "https://models.github.ai/inference"
