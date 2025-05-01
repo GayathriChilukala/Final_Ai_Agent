@@ -150,6 +150,15 @@ We aim to integrate **Spatial Language Models (Spatial LM)** for smarter, more c
 
 We are excited about these future developments and believe they will significantly enhance the user experience and capabilities of our platform. Stay tuned for updates!
 
+# Gemini - Exploring Creative Text Generation with Responsible AI
+
+This project leverages the power of large language models for creative text generation while adhering to responsible AI practices.
+
+**🧠 Responsible AI Practices**
+
+* **Transparency and Fair Usage:** We utilize publicly available datasets sourced from Kaggle and open-source models primarily from platforms like Hugging Face and GitHub. This ensures transparency in our data origins and model provenance, and we are committed to fair usage in accordance with their respective terms.
+
+
 **🙏 Acknowledgements**
 
 We would like to extend our sincere gratitude to **Microsoft** for organizing and conducting this insightful hackathon. Your support and platform have been invaluable in fostering innovation and allowing us to explore these exciting possibilities.
