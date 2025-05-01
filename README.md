@@ -117,26 +117,27 @@ Here's a summary of the model usage for each feature:
 
 ## UI Output Screenshots
 
+### Front Page Image
+![Front Page Image](https://github.com/GayathriChilukala/Final_Ai_Agent/blob/main/UI_Frontpage.jpg)
 
 ### UI Use Case 1
 
-![UI Use Case 1 Image](path/to/UI_Use_Case_1_Image.png)
-[A short description of what this screenshot shows]
+![UI Use Case 1 Image](https://github.com/GayathriChilukala/Final_Ai_Agent/blob/main/usecase1op.jpg)
+
 
 ### UI Use Case 2
 
-![UI Use Case 2 Image](path/to/UI_Use_Case_2_Image.png)
-[A short description of what this screenshot shows]
+![UI Use Case 2 Image](https://github.com/GayathriChilukala/Final_Ai_Agent/blob/main/usecase2op.jpg)
+
 
 ### UI Use Case 3
 
-![UI Use Case 3 Image](path/to/UI_Use_Case_3_Image.png)
-[A short description of what this screenshot shows]
+![UI Use Case 3 Image](https://github.com/GayathriChilukala/Final_Ai_Agent/blob/main/usecase3op.jpg)
+
 
 ### UI Use Case 4
 
-![UI Use Case 4 Image](path/to/UI_Use_Case_4_Image.png)
-[A short description of what this screenshot shows]
+![UI Use Case 4 Image](https://github.com/GayathriChilukala/Final_Ai_Agent/blob/main/usecase4op.jpg)
 
 
 ## Team Members
