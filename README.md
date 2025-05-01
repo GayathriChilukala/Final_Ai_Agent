@@ -120,22 +120,22 @@ Here's a summary of the model usage for each feature:
 ### Front Page Image
 ![Front Page Image](https://github.com/GayathriChilukala/Final_Ai_Agent/blob/main/UI_Frontpage.jpg)
 
-### UI Use Case 1
+### UI Images to Floor Plan
 
 ![UI Use Case 1 Image](https://github.com/GayathriChilukala/Final_Ai_Agent/blob/main/usecase1op.jpg)
 
 
-### UI Use Case 2
+### Text to Floor Plan
 
 ![UI Use Case 2 Image](https://github.com/GayathriChilukala/Final_Ai_Agent/blob/main/usecase2op.jpg)
 
 
-### UI Use Case 3
+### UI Images to Real Estate Description
 
 ![UI Use Case 3 Image](https://github.com/GayathriChilukala/Final_Ai_Agent/blob/main/usecase3op.jpg)
 
 
-### UI Use Case 4
+### UI Health Recommendations from Room Images
 
 ![UI Use Case 4 Image](https://github.com/GayathriChilukala/Final_Ai_Agent/blob/main/usecase4op.jpg)
 
