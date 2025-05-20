@@ -17,7 +17,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import logging
 
 
-mcp = FastMCP("Math")
+mcp = FastMCP("Pic2plot")
 
 # Function to analyze and summarize the room descriptions
 def analyze_room_layout(descriptions: str, endpoint: str, model_name: str, token: str):
