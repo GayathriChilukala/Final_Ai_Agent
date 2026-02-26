@@ -1,5 +1,5 @@
 # 🏠 Pic2Plot - Smart Floor Plan & Room Analyzer
-
+ 
 ## Overview
 
 Pic2Plot is a Python application that uses AI to generate floor plans, real estate descriptions, and health recommendations from room photos or text descriptions. It's built using Chainlit for the user interface, MCP for handling AI tasks, and various libraries for image processing and AI model interaction.
